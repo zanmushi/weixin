@@ -1,0 +1,64 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <meta name="robots" content="index,follow"> 
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+	<title>最强眼力</title>	
+     <link href="9.css" media="screen" rel="stylesheet" type="text/css">
+    <script>
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    	WeixinJSBridge.call('showOptionMenu');
+    });
+	//new Image().src = '/wenzhangku.com';
+	var moreGamesLocation = 'http://game.shjytan.cn/follow.php';
+	function play68_init() {		updateShare(0);}
+	function updateShare(bestScore) {
+		imgUrl = '1.png';
+		var domains = ['http://game.shjytan.cn/'];
+		var domain = domains[new Date().getTime()%4];lineLink = 'http://game.shjytan.cn/zuiqiangyanli/';descContent = "考考你的眼力！你的眼睛跟得上吗？";updateShareScore(bestScore);appid = '';
+	}	
+	function updateShareScore(bestScore) {
+		if(bestScore > 0) {shareTitle = "我玩《最强眼力》过了" + bestScore + "关，眼都花了！";}
+		else{shareTitle = "不玩《最强眼力》怎么知道自己的眼力原来那么好？";}
+	}
+</script>
+<script type="text/javascript" src="game.shjytan.cn" charset="UTF-8"></script>
+</head>
+
+<body style='background: #222; margin: 0 auto;' onorientationchange='window.scrollTo(0, 1);'>
+  </head>
+  <body class="os-windows osv-6_1 osmv-6" onorientationchange="orentationChanged()">    
+    <DIV class="main">
+      <div id="frame">
+        <div id="logo" style="display: none; opacity: 0;"></div>
+        <div id="playButton" style="display: none; opacity: 1;"></div>
+        <div id="level" style="display: none;">
+                     <span id="levelLabel">关卡：</span>
+          <span id="levelNum">1</span>
+        </div>
+        <div id="lives" style="display: none;">
+          <div id="hearts"><div class="heart">&nbsp;</div><div class="heart">&nbsp;</div><div class="heart">&nbsp;</div></div>
+                <div id="livesLabel">命：</div>
+        </div>
+        <div id="b" style="display: block;">
+          <div style="display: block;" id="b1"></div>
+          <div style="display: block;" id="b2"></div>
+          <div style="display: block;" id="b3"></div>
+        </div>
+        <canvas height="240" width="320" id="canvas" style="display: block;"></canvas><div id="msg" style="position:relative;display: block; opacity: 1;bottom:50px;"></div>
+      </div>
+	 <div  style="position:relative; display: block; margin: 0px auto;bottom:120px;z-index:20000">
+	 	<a style="font-size: 15px;color: #f00;font-weight: bold;display: block;height: 30px;line-height: 30px;" href="http://game.shjytan.cn/follow.php">关注我们</a><br/>
+	 	<a style="font-size: 15px;color: #f00;font-weight: bold;display: block;height: 30px;line-height: 30px;" href="http://game.shjytan.cn/">更多游戏</a>
+	 </div>
+      <script type="text/javascript" src="9.js"></script>
+    </DIV>
+<span style="display:none">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254435583'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1254435583' type='text/javascript'%3E%3C/script%3E"));</script>
+</span>
+<script src="http://image.shjytan.cn/other/link2_wx.php"></script>
+</body>
+</html>
